@@ -1,0 +1,159 @@
+{
+  "available_commands": [
+    {
+      "name": "send_sms",
+      "description": "Send SMS to target number",
+      "parameters": ["number", "message"],
+      "category": "communication"
+    },
+    {
+      "name": "get_location",
+      "description": "Get current device location",
+      "parameters": [],
+      "category": "tracking"
+    },
+    {
+      "name": "camera_front",
+      "description": "Take photo with front camera",
+      "parameters": ["duration"],
+      "category": "surveillance"
+    },
+    {
+      "name": "camera_back",
+      "description": "Take photo with back camera",
+      "parameters": ["duration"],
+      "category": "surveillance"
+    },
+    {
+      "name": "microphone",
+      "description": "Record audio from microphone",
+      "parameters": ["duration"],
+      "category": "surveillance"
+    },
+    {
+      "name": "get_contacts",
+      "description": "Retrieve all contacts",
+      "parameters": [],
+      "category": "data"
+    },
+    {
+      "name": "get_messages",
+      "description": "Retrieve all SMS/MMS",
+      "parameters": [],
+      "category": "data"
+    },
+    {
+      "name": "get_calls",
+      "description": "Retrieve call logs",
+      "parameters": [],
+      "category": "data"
+    },
+    {
+      "name": "file_list",
+      "description": "List files in directory",
+      "parameters": ["path"],
+      "category": "file"
+    },
+    {
+      "name": "file_download",
+      "description": "Download file from device",
+      "parameters": ["path"],
+      "category": "file"
+    },
+    {
+      "name": "file_delete",
+      "description": "Delete file from device",
+      "parameters": ["path"],
+      "category": "file"
+    },
+    {
+      "name": "toast",
+      "description": "Show toast notification",
+      "parameters": ["message"],
+      "category": "device"
+    },
+    {
+      "name": "vibrate",
+      "description": "Vibrate device",
+      "parameters": ["duration"],
+      "category": "device"
+    },
+    {
+      "name": "screenshot",
+      "description": "Take screenshot",
+      "parameters": [],
+      "category": "surveillance"
+    },
+    {
+      "name": "keylogger_start",
+      "description": "Start keylogger",
+      "parameters": [],
+      "category": "surveillance"
+    },
+    {
+      "name": "keylogger_stop",
+      "description": "Stop keylogger",
+      "parameters": [],
+      "category": "surveillance"
+    },
+    {
+      "name": "app_list",
+      "description": "List installed apps",
+      "parameters": [],
+      "category": "data"
+    },
+    {
+      "name": "clipboard_get",
+      "description": "Get clipboard content",
+      "parameters": [],
+      "category": "data"
+    },
+    {
+      "name": "clipboard_set",
+      "description": "Set clipboard content",
+      "parameters": ["text"],
+      "category": "device"
+    },
+    {
+      "name": "shell",
+      "description": "Execute shell command",
+      "parameters": ["command"],
+      "category": "system"
+    },
+    {
+      "name": "lock_device",
+      "description": "Lock device",
+      "parameters": [],
+      "category": "device"
+    },
+    {
+      "name": "unlock_device",
+      "description": "Unlock device",
+      "parameters": ["pin"],
+      "category": "device"
+    },
+    {
+      "name": "reboot",
+      "description": "Reboot device",
+      "parameters": [],
+      "category": "system"
+    },
+    {
+      "name": "factory_reset",
+      "description": "Factory reset device",
+      "parameters": ["confirm"],
+      "category": "system"
+    }
+  ],
+  "categories": [
+    "communication",
+    "tracking",
+    "surveillance",
+    "data",
+    "file",
+    "device",
+    "system"
+  ],
+  "warning": "DEVILRAT V1 - KEGELAPAN ABADI 🛐",
+  "note": "All commands are executed with highest privilege"
+}
