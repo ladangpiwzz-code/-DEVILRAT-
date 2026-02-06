@@ -1,0 +1,90 @@
+{
+  "status": "success",
+  "timestamp": "2024-02-06T02:55:00Z",
+  "devices": [
+    {
+      "id": "DEV-666-001",
+      "model": "Samsung Galaxy S24 Ultra",
+      "battery": "94%",
+      "android": "14",
+      "ip": "192.168.1.100",
+      "mac": "00:1A:2B:3C:4D:5E",
+      "status": "online",
+      "connected": "2024-02-06T02:30:00Z",
+      "provider": "Telkomsel",
+      "brightness": "85%",
+      "storage": "128GB/512GB",
+      "rooted": true,
+      "location": {
+        "lat": -6.2088,
+        "lng": 106.8456,
+        "accuracy": 15.5
+      }
+    },
+    {
+      "id": "DEV-666-002",
+      "model": "Google Pixel 8 Pro",
+      "battery": "67%",
+      "android": "14",
+      "ip": "192.168.1.101",
+      "mac": "00:2B:3C:4D:5E:6F",
+      "status": "online",
+      "connected": "2024-02-06T02:45:00Z",
+      "provider": "XL Axiata",
+      "brightness": "70%",
+      "storage": "256GB/1TB",
+      "rooted": false,
+      "location": {
+        "lat": -6.1754,
+        "lng": 106.8272,
+        "accuracy": 20.0
+      }
+    },
+    {
+      "id": "DEV-666-003",
+      "model": "Xiaomi 13T Pro",
+      "battery": "23%",
+      "android": "13",
+      "ip": "192.168.1.102",
+      "mac": "00:3C:4D:5E:6F:7A",
+      "status": "offline",
+      "connected": "2024-02-06T02:15:00Z",
+      "provider": "Indosat",
+      "brightness": "50%",
+      "storage": "64GB/256GB",
+      "rooted": true,
+      "location": {
+        "lat": -6.2266,
+        "lng": 106.8056,
+        "accuracy": 50.0
+      }
+    },
+    {
+      "id": "DEV-666-004",
+      "model": "OnePlus 11",
+      "battery": "100%",
+      "android": "13",
+      "ip": "192.168.1.103",
+      "mac": "00:4D:5E:6F:7A:8B",
+      "status": "online",
+      "connected": "2024-02-06T02:50:00Z",
+      "provider": "Smartfren",
+      "brightness": "90%",
+      "storage": "512GB/1TB",
+      "rooted": true,
+      "location": {
+        "lat": -6.1894,
+        "lng": 106.7933,
+        "accuracy": 10.5
+      }
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "online": 3,
+    "offline": 1,
+    "rooted": 3,
+    "avg_battery": 71
+  },
+  "message": "KEGELAPAN ABADI 🛐"
+    }
