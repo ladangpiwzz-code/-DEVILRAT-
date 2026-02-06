@@ -1,0 +1,35 @@
+{
+  "responses": [
+    {
+      "id": "RES-001",
+      "device_id": "DEV-666-001",
+      "command": "get_location",
+      "timestamp": "2024-02-06T02:55:30Z",
+      "result": {
+        "latitude": -6.2088,
+        "longitude": 106.8456,
+        "accuracy": 15.5,
+        "address": "Jl. MH Thamrin No.1, Jakarta 10310",
+        "provider": "GPS",
+        "speed": 0.0,
+        "altitude": 8.0
+      },
+      "status": "success"
+    },
+    {
+      "id": "RES-002",
+      "device_id": "DEV-666-002",
+      "command": "send_sms",
+      "timestamp": "2024-02-06T02:56:15Z",
+      "result": {
+        "to": "+628123456789",
+        "message": "Test from DEVILRAT",
+        "status": "sent",
+        "message_id": "123456789",
+        "timestamp": "2024-02-06T02:56:10Z"
+      },
+      "status": "success"
+    },
+    {
+      "id": "RES-003",
+      "device_id": "
